@@ -58,6 +58,23 @@
         </router-link>
       </b-col>
     </b-row>
+    <b-row>
+      <b-col class="spotlight patreon">
+        <b-row>
+          <b-col md="6" sm="12">
+            Do you want to support us? We have a Patreon account!
+          </b-col>
+          <b-col class="align-right" md="6" sm="12">
+            <b-button href="https://www.patreon.com/vuevixens/overview"
+                      target="_blank"
+                      variant="danger">
+              <img src="../assets/patreon.png" alt="Patreon logo">
+              Become a Patron
+            </b-button>
+          </b-col>
+        </b-row>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
@@ -103,6 +120,27 @@
     }
   }
 
+  .patreon {
+    margin-bottom: 0;
+    font-size: 22px;
+    .col-md-6 {
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+      &.align-right {
+        justify-content: flex-end;
+      }
+    }
+    .btn {
+      background-color: #f96854;
+      font-size: 22px;
+      img {
+        max-width: 30px;
+        margin-top: -5px;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     .btn-link {
       font-size: 24px !important;
@@ -111,6 +149,20 @@
       &:hover, &:focus, &:active {
         text-decoration: none;
         text-shadow: none;
+      }
+    }
+    .patreon {
+      font-size: 22px;
+      .col-md-6 {
+        padding: 0 30px;
+        justify-content: center;
+        text-align: center;
+        &.align-right {
+          justify-content: center;
+          .btn {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
