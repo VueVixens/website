@@ -4,9 +4,9 @@
       <b-col md="8" offset-md="2">
         <article class="card upcoming-card">
           <div class="card-body">
-            <h4 class="title">Gallery</h4>
+            <h4 class="title">{{ $t("title") }}</h4>
             <p class="card-text">
-              Here you can find images from our past skulks
+              {{ $t("subtitle") }}
             </p>
             <div class="full-width" v-if="!!story.content && !!story.content.body" align="center">
               <transition name="fade" mode="out-in" appear>
@@ -23,6 +23,7 @@
 <script>
   import storyblok from '../mixins/storyblok'
   import VvGrid from '../components/Grid'
+  import messages from '../translations/gallery'
 
   export default {
     mixins: [storyblok],
@@ -34,6 +35,9 @@
         slug: 'gallery',
       }
     },
+    i18n: {
+      messages
+    }
   }
 </script>
 

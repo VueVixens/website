@@ -5,9 +5,9 @@
                 <article class="card">                  
                     <img src="../assets/cry-fox.jpg" class="card-img-top"/>
                     <div class="card-body">
-                      <h4 class="title">Hey!</h4>
+                      <h4 class="title">{{ $t("title") }}</h4>
                       <p class="card-text">
-                       Looks like you find this page by error. Please go back.
+                        {{ $t("subtitle") }}
                       </p>
                     </div>
                 </article>
@@ -17,10 +17,14 @@
 </template>
 <script>
 import VueFormGenerator from 'vue-form-generator'
+import messages from '../translations/notFound'
 export default {
   name: 'Form',
   components: {
     'vue-form-generator': VueFormGenerator.component
+  },
+  i18n: {
+    messages
   },
   data () {
     return {

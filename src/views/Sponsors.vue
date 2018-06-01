@@ -2,9 +2,8 @@
   <b-container fluid>
     <b-row>
       <b-col md="8" offset-md="2">
-        <h3 class="title text-center">Our Sponsors</h3>
-        <h4 class="title text-center">We are extremely grateful to our sponsors! Below is a list of 
-            our valued community sponsors who are supporting our project</h4>
+        <h3 class="title text-center">{{ $t("title") }}</h3>
+        <h4 class="title text-center">{{ $t("subtitle") }}</h4>
         <b-row v-if="!!story.content && !!story.content.body">
           <b-col md="6" v-for="sponsor in story.content.body"
                  :key="sponsor.name">
@@ -21,7 +20,7 @@
                 </p>        
                 <p v-if="sponsor.website.url">
                   <i class="fas fa-link"></i>
-                  <a :href="sponsor.website.url">{{sponsor.website.url}}</a>
+                  <a class="link-green" :href="sponsor.website.url">{{sponsor.website.url}}</a>
                 </p>
               </div>
             </article>
@@ -33,8 +32,8 @@
 </template>
 
 <script>
-  import storyblok from "../mixins/storyblok";
-
+  import storyblok from '../mixins/storyblok';
+  import messages from '../translations/sponsors'
   export default {
     mixins: [storyblok],
     data() {
@@ -42,6 +41,9 @@
         slug: 'sponsors',
       }
     },
+    i18n: {
+      messages
+    }
   }
 </script>
 

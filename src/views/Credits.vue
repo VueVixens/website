@@ -1,29 +1,39 @@
 <template>
-    <b-container fluid>
-        <b-row>
-            <b-col md="6" offset-md="3">
-                <article class="card">
-                    <div class="card-body">
-                        <h4 class="title">Credits</h4>
-                        <p class="card-text">
-                            We are indebted to several resources both online and in person.
-                        </p>
-                        <ul class="list">
-                            <li class="list-item">🦊 Photos on this site are from <a href="https://unsplash.com/">Unsplash</a>
-                                by Joey Kyber, Westley Ferguson, Caleb Woods, Jeremy Vessey, Ray Hennessey, Climate KIC,
-                                Dai KE, Hans Veth, Mikael Kristenson, Nathan Anderson. The image of the skulk was taken
-                                from
-                                <a href="http://www.kaixinfun.com/article/detail/1742/These-Are-The-Weirdest-Names-For-Groups-Of-Animals">KaiXinFun</a>.
-                            </li>
-                            <li class="list-item">🦊 This project was inspired by <a href="http://www.ng-girls.org">ng-Girls</a>,
-                                <a href="http://www.djangogirls.org">Django Girls</a>, and <a
-                                        href="http://railsbridge.org/">Rails Bridge</a>. Awesome initiatives
-                                worth checking out!
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </b-col>
-        </b-row>
-    </b-container>
+  <b-container fluid>
+    <b-row>
+      <b-col md="6" offset-md="3">
+        <article class="card">
+          <div class="card-body">
+            <h4 class="title">{{ $t("title") }}</h4>
+            <p class="card-text">
+              {{ $t("subtitle") }}
+            </p>
+            <ul class="list">
+              <i18n class="list-item" tag="li" path="item1">
+                <a class="link-green" href="https://unsplash.com/" place="unsplash">{{ $t("unsplashLink") }}</a>
+                <a class="link-green" place="artist"
+                  href="http://www.kaixinfun.com/article/detail/1742/These-Are-The-Weirdest-Names-For-Groups-Of-Animals">
+                  {{ $t("artistLink") }}
+                </a>
+              </i18n>
+              <i18n class="list-item" tag="li" path="item2">
+                <a class="link-green" href="http://www.ng-girls.org" place="ngGirls">ng-Girls</a>
+                <a class="link-green" href="http://www.djangogirls.org" place="djangoGirls">Django Girls</a>
+                <a class="link-green" href="http://railsbridge.org/" place="railsBridge">Rails Bridge</a>
+              </i18n>
+            </ul>
+          </div>
+        </article>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
+
+<script>
+  import messages from '../translations/credits'
+  export default {
+    i18n: {
+      messages
+    }
+  }
+</script>

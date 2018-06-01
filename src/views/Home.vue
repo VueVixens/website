@@ -2,16 +2,16 @@
   <b-container fluid>
     <b-row>
       <b-col class="article">
-        <h1>{{ msg }}</h1>
+        <h1>{{ $t("title.msg") }}</h1>
         <transition name="fade-scale" appear>
           <img src="../assets/logo.png">
         </transition>
-        <h2>{{ tagline }}</h2>
+        <h2>{{ $t("title.tagline") }}</h2>
       </b-col>
     </b-row>
     <b-row>
       <b-col class="article spotlight">
-        <h2><b>Upcoming Events</b></h2>
+        <h2><b>{{ $t("eventsTitle") }}</b></h2>
         <transition name="fade" appear>
           <b-row v-if="!!story.content && !!story.content.body">
             <b-col class="mx-auto" sm="auto" v-for="item in story.content.body[0].columns" :key="item.name">
@@ -28,9 +28,9 @@
         <router-link tag="article" :to="{ name: 'upcoming'}" class="card darkened">
           <img src="../assets/fox.jpg" class="card-img-top"/>
           <div class="card-body">
-            <h4 class="title">Join a Skulk</h4>
+            <h4 class="title">{{ $t("skulk.title") }}</h4>
             <p class="card-text">
-              Want to learn Vue.js? Join a Vue Vixen Skulk for free!
+              {{ $t("skulk.content") }}
             </p>
           </div>
         </router-link>
@@ -39,9 +39,9 @@
         <router-link tag="article" :to="{ name: 'about'}" class="card darkened">
           <img src="../assets/one-student.jpg" class="card-img-top"/>
           <div class="card-body">
-            <h4 class="title">The Program</h4>
+            <h4 class="title">{{ $t("program.title") }}</h4>
             <p class="card-text">
-              Students and Mentors, learn more about our program.
+              {{ $t("program.content") }}
             </p>
           </div>
         </router-link>
@@ -50,9 +50,9 @@
         <router-link tag="article" :to="{ name: 'request'}" class="card darkened">
           <img src="../assets/conference-crowd.jpg" class="card-img-top"/>
           <div class="card-body">
-            <h4 class="title">Request</h4>
+            <h4 class="title">{{ $t("request.title") }}</h4>
             <p class="card-text">
-              Conference organizers, register to host a workshop.
+              {{ $t("request.content") }}
             </p>
           </div>
         </router-link>
@@ -63,19 +63,24 @@
 
 <script>
   import storyblok from '../mixins/storyblok'
+  import messages from '../translations/home';
   export default {
     mixins: [storyblok],
     data() {
       return {
-        msg: 'Welcome to Vue Vixens!',
-        tagline: 'Vue Vixens are foxy people who identify as women and who want to learn Vue.js to make websites and mobile apps',
         slug: 'home',
       }
     },
+    i18n: {
+      messages,
+    }
   }
 </script>
 
 <style lang="scss" scoped>
+  .card {
+    height: 100%;
+  }
 
   .spotlight {
     background-color: #47B784;

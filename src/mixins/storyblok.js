@@ -7,21 +7,23 @@ export default {
   },
   created: function () {
     this.$storyblok.on('change', () => {
-      this.loadStory('draft')
+      this.loadStory('draft', this.$i18n.locale)
     });
     this.$storyblok.on('published', () => {
-      this.loadStory('draft')
+      this.loadStory('draft', this.$i18n.locale)
     });
-
     this.$storyblok.pingEditor(() => {
-      this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published')
-    })
+      this.loadStory(this.$storyblok.inEditor ? 'draft' : 'published', this.$i18n.locale)
+    });
+    this.$eventBus.$on('changeLocale', locale => {
+      this.loadStory('published', locale)
+    });
   },
   methods: {
-    loadStory(version) {
+    loadStory(version, locale) {
       this.loading = true;
       this.$storyblok.get({
-        slug: this.slug,
+        slug: locale ? `${locale}/${this.slug}`: `en/${this.slug}`,
         version: version
       }, (data) => {
         this.story = {

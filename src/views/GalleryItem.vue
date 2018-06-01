@@ -5,7 +5,7 @@
         <article class="card">
           <div class="card-body">
             <h4 class="title">
-              <router-link to="/gallery">Gallery</router-link>
+              <router-link to="/gallery">{{ $t("title") }}</router-link>
               >
               {{$route.params.item}}
             </h4>
@@ -46,6 +46,7 @@
 
 <script>
   import storyblok from '../mixins/storyblok'
+  import messages from '../translations/gallery'
   export default {
     mixins: [storyblok],
     computed: {
@@ -71,6 +72,9 @@
       onSlideEnd (slide) {
         this.sliding = false
       }
+    },
+    i18n: {
+      messages
     }
   }
 </script>

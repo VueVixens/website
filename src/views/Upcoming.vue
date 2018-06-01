@@ -4,10 +4,9 @@
       <b-col md="8" offset-md="2">
         <article class="card upcoming-card">
           <div class="card-body">
-            <h4 class="title">Upcoming Skulks</h4>
+            <h4 class="title">{{ $t("title") }}</h4>
             <p class="card-text">
-              What's a skulk? A group of foxes is actually called a skulk. Here are events coming soon to
-              a conference near you!
+              {{ $t("subtitle") }}
             </p>
             <div class="full-width" v-if="!!story.content && !!story.content.body" align="center">
               <b-button class="toggle-button" size="lg" variant="success" @click="showGrid = !showGrid">
@@ -36,6 +35,7 @@
   import CalendarView from 'vue-simple-calendar'
   import 'vue-simple-calendar/dist/static/css/default.css';
   import VvGrid from '../components/Grid'
+  import messages from '../translations/upcoming'
 
   export default {
     mixins: [storyblok],
@@ -69,6 +69,9 @@
       navigateToEvent(event) {
         this.$router.push(event.originalEvent.link);
       }
+    },
+    i18n: {
+      messages
     }
   }
 </script>
