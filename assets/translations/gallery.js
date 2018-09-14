@@ -1,7 +1,7 @@
 export default {
   de: {
     title: 'Gallerie',
-    subtitle: `Hier findest Du Bilder unserer vergangenen Veranstaltungen`
+    subtitle: `Hier findest Du Bilder unserer vergangenen Skulks`
   },
   en: {
     title: 'Gallery',

@@ -1,8 +1,8 @@
 export default {
   de: {
-    title: 'Bevorstehende Rudel',
-    subtitle: `Was ist ein Rudel? Eine Gruppe von Füchsen wird Rudel genannt. Hier sind Veranstaltungen
-              demnächst bei einer Konferenz in Deiner Nähe!`
+    title: 'Bevorstehende Skulks',
+    subtitle: `Was ist ein Skulk? Skulk ist das englische Wort für Rudel. Eine Gruppe von Füchsen wird Rudel genannt. 
+              Hier sind Veranstaltungen demnächst bei einer Konferenz in Deiner Nähe!`
   },
   en: {
     title: 'Upcoming Skulks',

@@ -39,7 +39,7 @@ export default {
               Außerdem hast Du die Chance gleichgesinnte Lernende kennenzulernen und führende
               Personen aus unserem Gebiet kennenzulernen denn unsere Mentoren sind oft Vortragende
               auf der Konferenz die Du besuchst.`,
-        paragraph2: `{mentorsNote}: Wenn Du eine Vue Vixens Veranstaltung als Betreuer begleitest:
+        paragraph2: `{mentorsNote}: Wenn Du ein Vue Vixens Skulk als Betreuer begleitest:
               Vielen Dank! Dank Menschen wie Dir können wir kostenlose Workshops für neue
               Entwickler in einem unterstützenden Umfeld anbieten. Deine Aufgabe ist es
               Deine Schülern den ganzen Tag zu betreuen, ihnen bei der Überwindung von
@@ -48,7 +48,7 @@ export default {
               Um Mißverständnisse zu vermeiden: Jeder kann Mentor bei Vue Vixens sein! Wir
               sind dankbar für Deine Unterstützung.`,
         mentorsNote: `Für Mentoren`,
-        paragraph3: `{studentsNote}: Bist Du Dir unsicher ob Du auf eine unserer Veranstaltung passt?
+        paragraph3: `{studentsNote}: Bist Du Dir unsicher ob Du auf einen unserer Skulks passt?
              Wenn Entwicklung für Dich neu ist und Du "sie" oder ein neutraleres
              Pronomen verwendest, dann bist Du willkommen. Wir möchten niemand ausschließen,
              aber diese Gemeinschaft ist für Frauen und Menschen die sich als solche identifizieren.

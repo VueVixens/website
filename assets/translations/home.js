@@ -10,8 +10,8 @@ export default {
     },
     eventsTitle: 'Bevorstehende Veranstaltungen',
     skulk: {
-      title: 'Mach mit',
-      content: 'Willst Du Vue.js lernen? Mach bei einem Vue Wixens Workshop kostenlos mit!'
+      title: 'Nimm an einem Skulk teil',
+      content: 'Willst Du Vue.js lernen? Mach bei einem Vue Wixens Skulk kostenlos mit!'
     },
     program: {
       title: 'Das Konzept',
