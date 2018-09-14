@@ -1,4 +1,8 @@
 export default {
+  de: {
+    eventsTitle: 'Bevorstehende Veranstaltungen',
+    cta: 'Alle Events anzeigen'
+  },
   en: {
     eventsTitle: 'Upcoming Events',
     cta: 'See all events'

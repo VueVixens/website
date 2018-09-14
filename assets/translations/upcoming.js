@@ -1,4 +1,9 @@
 export default {
+  de: {
+    title: 'Bevorstehende Rudel',
+    subtitle: `Was ist ein Rudel? Eine Gruppe von Füchsen wird Rudel genannt. Hier sind Veranstaltungen
+              demnächst bei einer Konferenz in Deiner Nähe!`
+  },
   en: {
     title: 'Upcoming Skulks',
     subtitle: `What's a skulk? A group of foxes is actually called a skulk. Here are events coming soon to

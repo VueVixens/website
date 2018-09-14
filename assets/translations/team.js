@@ -1,4 +1,9 @@
 export default {
+  de: {
+    team: 'Unser Team',
+    board: `Vorstand`,
+    regional: 'Regionale Leiter'
+  },
   en: {
     team: 'Our Team',
     board: `Board of Directors`,

@@ -1,4 +1,27 @@
 export default {
+  de: {
+    heading: {
+      title: 'Willkommen bei Vue Vixens!',
+      description:
+        'Die Vue Vixens sind flotte Menschen die sich als Frau identifizieren und Vue.js' +
+        'lernen wollen um Webanwendungen und Apps zu erschaffen',
+      workshops: 'Workshops',
+      patreon: 'Werde Unterstützer'
+    },
+    eventsTitle: 'Bevorstehende Veranstaltungen',
+    skulk: {
+      title: 'Mach mit',
+      content: 'Willst Du Vue.js lernen? Mach bei einem Vue Wixens Workshop kostenlos mit!'
+    },
+    program: {
+      title: 'Das Konzept',
+      content: 'Lernende and Mentoren: Erfahre mehr über unser Konzept.'
+    },
+    request: {
+      title: 'Workshop-Anfrage',
+      content: 'Konferenzveranstalter: Registrieren um einen Workshop anzubieten.'
+    }
+  },
   en: {
     heading: {
       title: 'Welcome to Vue Vixens!',

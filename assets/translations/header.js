@@ -1,4 +1,21 @@
 export default {
+  de: {
+    menu: {
+      about: 'Über',
+      upcoming: 'Demnächst',
+      sponsors: 'Sponsoren',
+      team: 'Team',
+      gallery: 'Gallerie',
+      library: 'Bibliothek',
+      shop: 'Shop'
+    },
+    languages: {
+      de: 'Deutsch',
+      en: 'English',
+      es: 'Español',
+      pt: 'Português'
+    }
+  },
   en: {
     menu: {
       about: 'About',
@@ -10,6 +27,7 @@ export default {
       shop: 'Shop'
     },
     languages: {
+      de: 'Deutsch',
       en: 'English',
       es: 'Español',
       pt: 'Português'
@@ -26,6 +44,7 @@ export default {
       library: 'Library'
     },
     languages: {
+      de: 'Deutsch',
       en: 'English',
       es: 'Español',
       pt: 'Português'
@@ -42,6 +61,7 @@ export default {
       library: 'Livraria'
     },
     languages: {
+      de: 'Deutsch',
       en: 'English',
       es: 'Español',
       pt: 'Português'

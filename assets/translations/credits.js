@@ -1,4 +1,15 @@
 export default {
+  de: {
+    title: 'Danksagungen',
+    subtitle: `Wir sind diversen Organisationen und Menschen zu Dank verpflichtet.`,
+    item1: `🦊 Die Fotos auf dieser Seite sind von {unsplash},
+                fotografiert von Joey Kyber, Westley Ferguson, Caleb Woods, Jeremy Vessey, Ray Hennessey, Climate KIC,
+                Dai KE, Hans Veth, Mikael Kristenson, Nathan Anderson. Das große abstrakte Fuchsbild auf der Hauptseite stammt von {mainPage}`,
+    unsplashLink: 'Unsplash',
+    mainPageLink: 'verniannguyen at DeviantArt',
+    item2: `🦊 Dieses Projekt wurde inspiriert von {ngGirls}, {djangoGirls} und {railsBridge}. Großartige Initiativen
+                die es lohnt sich anzusehen!`
+  },
   en: {
     title: 'Credits',
     subtitle: `We are indebted to several resources both online and in person.`,

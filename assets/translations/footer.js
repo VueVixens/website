@@ -1,4 +1,9 @@
 export default {
+  de: {
+    progress: 'Ein durch Progress unterstütztes Projekt',
+    request: 'Workshop beantragen',
+    credits: 'Danksagungen'
+  },
   en: {
     progress: 'A Project supported by Progress',
     request: 'Request a Skulk',

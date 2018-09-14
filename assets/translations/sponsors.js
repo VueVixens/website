@@ -1,4 +1,9 @@
 export default {
+  de: {
+    title: 'Unsere Sponsoren',
+    subtitle: `Wir sind unseren Sponsoren außerordentlich dankbar! Hier ist eine Liste
+            unserer geschätzten Sponsoren die unser Projekt unterstützen`
+  },
   en: {
     title: 'Our Sponsors',
     subtitle: `We are extremely grateful to our sponsors! Below is a list of

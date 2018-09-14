@@ -1,4 +1,20 @@
 export default {
+  de: {
+    title:
+      'Beantrage einen Vue Vixens Workshop für Deine Konferenz, Treffen, Gruppe oder Veranstaltung',
+    subtitle: `Wie es funktioniert`,
+    content: `Wenn Du eine Veranstaltung organisierst, erwäge die Diversität zu fördern durch das
+                Angebot eines kostenlosen Vue Wixen Workshops für Menschen die sich als Frau identifizieren.
+                Eine mögliches Modell ist es bezahlte Workshops vor der Konferenz anzubieten und dann
+                Vue Wixens Workshops nach der Konferenz. Workshops sind Ganztagsveranstaltungen, kostenlos
+                für angemeldete Teilnehmerinnen und kostengünstig für Dich.
+                Konferenz-Veranstalter arbeiten mit uns an der Logistik, dies beinhaltet:`,
+    li1: '🦊 Ein Veranstaltungsort mit Platz zum Arbeiten und Internetzugang',
+    li2: '🦊 Mittagessen für die Teilnehmerinnen, durch die Konferenz/Veranstaltung bereitgestellt',
+    li3:
+      '🦊 Mentoren aus dem Kreis der Vortragenden. Wir werden diese selber ansprechen wenn wir eine Liste bekommen!',
+    button: 'Workshop beantragen'
+  },
   en: {
     title:
       'Request a Vue Vixens Workshop for your Conference, Meetup, Group or Event',

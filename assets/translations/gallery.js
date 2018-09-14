@@ -1,4 +1,8 @@
 export default {
+  de: {
+    title: 'Gallerie',
+    subtitle: `Hier findest Du Bilder unserer vergangenen Veranstaltungen`
+  },
   en: {
     title: 'Gallery',
     subtitle: `Here you can find images from our past skulks`

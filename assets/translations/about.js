@@ -1,4 +1,72 @@
 export default {
+  de: {
+    vixens: {
+      title: 'Über die Vue Vixens',
+      content: `Die {medium} sind eine von {jen}, Developer Advocate bei {progress}, 
+              gegründete Initiative die Workshops entwickelt und durchführt um
+              unterrepräsentierten Menschen Vue.js in einer coolen und spaßigen
+              Weise beizubrignen.
+              Vorbild war das erfolgreiche Modell der {{ngGirls}} der Angular-Gemeinschaft,
+              eingeführt von Shmuela Jacobs und inspiriert durch die Iniativen Rails Bridge
+              und Django Girls.
+              Das Konzept beinhaltet selbstorganisierte "Code Labs" die als Workshop in
+              einer Gruppe durchgeführt werden. Unterstützt werden diese von ehrenamtlichen
+              Betreuern die sich aus Konferenzbesuchern und Vortragenden zusammensetzen.
+              Das Ziel der Initiative ist Frauen und Menschen die sich als solche identifizieren
+              in einer unterstützenden und inklusiven Weise mit Vue.js vertraut zu machen.
+              Außerdem helfen wir Konferenzen bei ihren Diversitätsbemühungen z.B. durch
+              Weitergabe von Freikarten und dem Aufbau eines Fonds für Reisekosten-Zuschüsse 
+              um diesen Personen den Besuch von Konferenzen zu erleichtern.
+              Fragen? Schreib uns an {mail}!`,
+      mediumLink: 'Vue Vixens',
+      jenLink: 'Jen Looper',
+      progressLink: 'Progress',
+      ngGirlsLink: 'ng-girls.org',
+      mailLink: 'info@vuevixens.org'
+    },
+    activities: {
+      title: 'Über unsere Aktivitäten',
+      content: {
+        paragraph1: `Was kannst Du von einer Vue Vixens Veranstaltung erwarten? Nun,
+              als Lernende, vielleicht auch noch neu auf dem Gebiet der Frontend-Entwicklung,
+              bekommst Du die Gelegenheit Vue.js zu erlernen, ein cooles und modernes
+              Framework zur Entwicklung von Webanwendungen und Apps. Zum Beispiel im
+              Rahmen eines Frühstücks ("Lunch 'n' Learn") oder auch eines ganzen Tages
+              arbeitest Du mit einem Mentor in kleinen Gruppen in einem selbstorganisiertem
+              Workshop.
+              Du wirst eine Webanwendung und eine App entwickeln und dabei Programmierung in
+              Javascript und Frameworks kennenlernen.
+              Außerdem hast Du die Chance gleichgesinnte Lernende kennenzulernen und führende
+              Personen aus unserem Gebiet kennenzulernen denn unsere Mentoren sind oft Vortragende
+              auf der Konferenz die Du besuchst.`,
+        paragraph2: `{mentorsNote}: Wenn Du eine Vue Vixens Veranstaltung als Betreuer begleitest:
+              Vielen Dank! Dank Menschen wie Dir können wir kostenlose Workshops für neue
+              Entwickler in einem unterstützenden Umfeld anbieten. Deine Aufgabe ist es
+              Deine Schülern den ganzen Tag zu betreuen, ihnen bei der Überwindung von
+              Schwierigkeiten zu helfen und ihnen einen Eindruck vom Leben als erfahrener und
+              professioneller Entwickler zu vermitteln. Du bist großartig!
+              Um Mißverständnisse zu vermeiden: Jeder kann Mentor bei Vue Vixens sein! Wir
+              sind dankbar für Deine Unterstützung.`,
+        mentorsNote: `Für Mentoren`,
+        paragraph3: `{studentsNote}: Bist Du Dir unsicher ob Du auf eine unserer Veranstaltung passt?
+             Wenn Entwicklung für Dich neu ist und Du "sie" oder ein neutraleres
+             Pronomen verwendest, dann bist Du willkommen. Wir möchten niemand ausschließen,
+             aber diese Gemeinschaft ist für Frauen und Menschen die sich als solche identifizieren.
+             Wir sind trans-freundlich. Die Gründerin von Vue Vixens, Jen Looper, ist Absolventin
+             des Wellesley College (Abschluss 1992) und hat die Aufnahmekriterium dieser Hochschule
+             als Grundlage genommen. Zusammengefasst bedeutet das:`,
+        studentsNote: 'Für Lernende',
+        paragraph4: `"Wir sind offen für jede Person die als Frau lebt und sich dauerhaft als
+              solche identifiziert. Dies beinhaltet Kandidaten die bei Geburt als männlich
+              eingestuft wurden, sich aber als Frauen identifizieren. Wir begrüßen auch diejenigen,
+              die bei Geburt als Frau eingestuft wurden und das Gefühl haben zu unserer Gemeinschaft
+              von Frauen zu gehören.
+              Wir haben das Ziel Frauen ein einzigartiges Lernumfeld zu bieten in dem sie wachsen
+              können und sie darauf vorzubereiten sich in einer komplexen Welt zu behaupten."`,
+        paragraph5: 'Vielen Dank für Dein Verständnis! 🦊'
+      }
+    }
+  },
   en: {
     vixens: {
       title: 'About Vue Vixens',

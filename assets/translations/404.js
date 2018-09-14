@@ -1,4 +1,9 @@
 export default {
+  de: {
+    title: 'Hey!',
+    subtitle: `Offenbar bist Du hier aus Versehen gelandet. Bitte geh zurück.`
+
+  },
   en: {
     title: 'Hey!',
     subtitle: `Looks like you find this page by error. Please go back.`
