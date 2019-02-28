@@ -97,12 +97,11 @@ module.exports = {
     }
   },
   proxy: {
-    "/meetup": {
-      target:
-        "https://api.meetup.com/VueVixens/events/258390667/hosts?&sign=true&photo-host=public",
-      pathRewrite: {
-        "^/api": "/"
-      }
+    "/meetups": {
+      target: "https://api.meetup.com/VueVixens/events/?&sign=true"
+      // pathRewrite: {
+      //   "^/api": "/"
+      // }
     }
   }
 };
