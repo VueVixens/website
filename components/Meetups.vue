@@ -2,7 +2,7 @@
   <div class="vv-meetups">
       <v-layout align-center justify-center wrap>
         <v-flex xs12 text-xs-center>
-          <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{ title }}</h2>
+          <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{ title }} {{ ip }} </h2>
         </v-flex>
         <v-list class="meetup-list container" two-line>
          
@@ -36,6 +36,7 @@ export default {
   data: () => {
     return {
       title: "Meetups",
+      ip: "no ip",
       meetups: [
         {
           created: 1548434643000,
@@ -182,6 +183,11 @@ export default {
   components: {},
   i18n: {
     //messages //TODO
+  },
+  created() {
+    const ip = this.$axios.$get("/meetup").then(res => {
+      this.ip = res;
+    });
   }
 };
 </script>
