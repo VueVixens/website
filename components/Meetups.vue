@@ -14,6 +14,7 @@
               :href="meetup.link"
                v-for="meetup in meetups"
               class="meetup-item"
+              target="_blank"
             >
               <v-list-tile-avatar class="meetup-item__avatar">
                 <img src="~/assets/images/logo.png">
