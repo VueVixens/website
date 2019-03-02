@@ -99,9 +99,6 @@ module.exports = {
   proxy: {
     "/meetups": {
       target: "https://api.meetup.com/VueVixens/events/?&sign=true"
-      // pathRewrite: {
-      //   "^/api": "/"
-      // }
     }
   }
 };
