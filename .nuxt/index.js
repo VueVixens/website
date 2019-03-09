@@ -12,8 +12,8 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 
 /* Plugins */
-import nuxt_plugin_templatesplugin715d1f8a_396d5a7c from 'nuxt_plugin_templatesplugin715d1f8a_396d5a7c' // Source: ./templates.plugin.715d1f8a.js
-import nuxt_plugin_googleanalytics_46b13d5a from 'nuxt_plugin_googleanalytics_46b13d5a' // Source: ./google-analytics.js (ssr: false)
+import nuxt_plugin_templatesplugin6460524e_4108768a from 'nuxt_plugin_templatesplugin6460524e_4108768a' // Source: ./templates.plugin.6460524e.js
+import nuxt_plugin_googleanalytics_17d73526 from 'nuxt_plugin_googleanalytics_17d73526' // Source: ./google-analytics.js (ssr: false)
 import nuxt_plugin_vuetify_165b1c58 from 'nuxt_plugin_vuetify_165b1c58' // Source: ../plugins/vuetify
 import nuxt_plugin_eventBus_aaeb250a from 'nuxt_plugin_eventBus_aaeb250a' // Source: ../plugins/eventBus.js
 import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../plugins/i18n.js
@@ -139,14 +139,14 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_templatesplugin715d1f8a_396d5a7c === 'function') await nuxt_plugin_templatesplugin715d1f8a_396d5a7c(app.context, inject)
+  if (typeof nuxt_plugin_templatesplugin6460524e_4108768a === 'function') await nuxt_plugin_templatesplugin6460524e_4108768a(app.context, inject)
   if (typeof nuxt_plugin_vuetify_165b1c58 === 'function') await nuxt_plugin_vuetify_165b1c58(app.context, inject)
   if (typeof nuxt_plugin_eventBus_aaeb250a === 'function') await nuxt_plugin_eventBus_aaeb250a(app.context, inject)
   if (typeof nuxt_plugin_i18n_1fba523a === 'function') await nuxt_plugin_i18n_1fba523a(app.context, inject)
   if (typeof nuxt_plugin_vuemoment_732aa8ba === 'function') await nuxt_plugin_vuemoment_732aa8ba(app.context, inject)
   
   if (process.browser) { 
-    if (typeof nuxt_plugin_googleanalytics_46b13d5a === 'function') await nuxt_plugin_googleanalytics_46b13d5a(app.context, inject)
+    if (typeof nuxt_plugin_googleanalytics_17d73526 === 'function') await nuxt_plugin_googleanalytics_17d73526(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
