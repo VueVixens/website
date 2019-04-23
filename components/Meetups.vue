@@ -1,5 +1,6 @@
 <template>
   <div class="vv-meetups">
+    <v-container fill-height>
       <v-layout align-center justify-center wrap>
         <v-flex xs12 text-xs-center>
           <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{ title }} </h2>
@@ -7,34 +8,35 @@
         <div v-if="loading">
           {{ loadingMessage }}
         </div>
-        <div v-else-if="meetups.length !== 0 && !loading">
-          <v-list class="meetup-list container" two-line>
-            <v-list-tile
-              :key="meetup.name"
+        <v-container grid-list-lg v-else-if="meetups.length !== 0 && !loading" >
+          <v-layout wrap>
+        <v-flex xs12 sm4 md3  :key="meetup.name" v-for="meetup in meetups" >
+          <v-card class="meetup-item" hover  nuxt
               :href="meetup.link"
-               v-for="meetup in meetups"
-              class="meetup-item"
               target="_blank"
-            >
-              <v-list-tile-avatar class="meetup-item__avatar">
-                <img src="~/assets/images/logo.png">
-              </v-list-tile-avatar>
-              <v-list-tile-content class="meetup-item__content">
-                <v-list-tile-title class="meetup-item__title">{{ meetup.name }}</v-list-tile-title>
-                <v-list-tile-sub-title class="meetup-item__subtitle text--primary">{{ meetup.venue.city }}</v-list-tile-sub-title>
-                <v-list-tile-sub-title class="meetup-item__subtitle">{{ meetup.local_date}} {{meetup.local_time}}</v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </v-list>
-        </div>
+          >
+            <v-layout fill-height align-center justify-center ma-0>
+                <v-flex xs12  class="meetup-item__content">
+                    <h3 class="headline meetup-item__title">{{meetup.name}}</h3>
+                <span class="meetup-item__subtitle meetup-item__subtitle--city text--primary">{{ meetup.venue.city }}</span>
+                <span class="meetup-item__subtitle meetup-item__subtitle--date ">{{ meetup.local_date  | moment('MMM Do')}}</span>
+                <span class="meetup-item__subtitle meetup-item__subtitle--time ">@{{meetup.local_time}}</span>
+                </v-flex>
+              </v-layout>
+          </v-card>
+        </v-flex>
+          </v-layout>
+        </v-container>
+
         <div v-else>
           {{ laterMessage }}
         </div>
       </v-layout>
-
+    </v-container>
   </div>
 </template>
 <script>
+
 import VVGrid from "../components/Grid";
 export default {
   props: ["title", "loadingMessage", "laterMessage"],
@@ -42,7 +44,6 @@ export default {
     return {
       loading: true,
       meetups: [],
-      hosts: []
     };
   },
   components: {},
@@ -56,44 +57,37 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.meetup-list {
-  padding: 24px 30px;
-  width: 100%;
-  max-width: 600px;
-  margin: 24px auto;
-}
 
-.meetup-list > div:not(:first-child) {
-  margin-top: 20px;
-}
-.meetup-item__avatar {
-  .v-avatar {
-    padding: 2px;
-    border: 1px solid #c8553c;
-    background: lighten(#c8553c, 30%);
-  }
-  img {
-  }
-}
-.meetup-item__content {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-}
 
+.meetup-item{
+  padding: 20px;
+}
 .meetup-item__title {
+  flex-basis: 100%;
   font-size: 22px;
   flex-basis: 100%;
   font-weight: 700;
 }
 .meetup-item__subtitle {
   flex-basis: auto;
-  width: auto;
+  display: block;
   font-size: 18px;
-  margin-right: 1rem;
+  &--city{
+    flex-basis: 100%;
+    font-weight: bold;
+  }
+  &--date, &--time {
+    display: block;
+    margin-top: auto;
+  }
+  &--time {
+    align-self: flex-end;
+  }
 }
-.meetup-item__subtitle:not(:last-child) {
-  margin-right: 1rem;
+.meetup-item__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 </style>
