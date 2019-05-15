@@ -10,6 +10,11 @@
         </p>
         <div class="mt-3 mb-5">
           <v-btn
+            v-if="currentEvent.registrationUrl"
+            color="primary darken-1"
+            :href="currentEvent.registrationUrl"
+          >Registration</v-btn>
+          <v-btn
             v-if="currentEvent.registration"
             color="primary darken-1"
             :to="`/form/${$route.params.event}`"
