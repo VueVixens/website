@@ -2,7 +2,7 @@
   <v-container pt-4 pb-5>
     <v-layout wrap justify-space-around>
       <v-flex xs12 sm3 md2 pa-2 v-for="member in members" :key="member.name">
-        <v-card>
+        <v-card class="event-member-card">
           <v-img
             height="150px"
             :alt="`${member.name} picture`"
@@ -46,5 +46,9 @@ export default {
 a,
 p {
   width: 100%;
+}
+
+.event-member-card {
+  height: 100%;
 }
 </style>

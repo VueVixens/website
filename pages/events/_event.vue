@@ -53,14 +53,17 @@
       <v-divider></v-divider>
       <h1 class="text-xs-center primary--text font-lato mt-3">Sponsors</h1>
       <v-container pa-4>
-        <v-layout row wrap justify-space-around>
-          <v-flex xs12 sm3 v-for="sponsor in currentEvent.sponsors" :key="sponsor.name">
-            <div class="vv-day-sponsor px-4 mb-3">
-              <a :href="sponsor.website" target="_blank">
-                <img :src="sponsor.img" class="vv-day-sponsor-logo">
-              </a>
-            </div>
-          </v-flex>
+        <v-layout column v-for="category in sponsors" :key="category.name">
+          <h2 class="text-xs-center">{{category.name}}</h2>
+          <v-layout justify-center align-center>
+            <v-flex xs12 sm3 v-for="sponsor in category.list" :key="sponsor.name">
+              <div class="vv-day-sponsor px-4 mb-3">
+                <a :href="sponsor.website.url" target="_blank">
+                  <img :src="sponsor.img" class="vv-day-sponsor-logo">
+                </a>
+              </div>
+            </v-flex>
+          </v-layout>
         </v-layout>
       </v-container>
     </template>
@@ -81,6 +84,13 @@ export default {
   computed: {
     currentEvent() {
       return this.story.content;
+    },
+    sponsors() {
+      const levels = ["Platinum", "Gold", "Silver", "Software", "Partner"];
+      return levels.map(level => ({
+        name: level === "Partner" ? "Partners" : level,
+        list: this.selectSponsorsByLevel(level)
+      })).filter(level => level.list.length > 0);
     }
   },
   methods: {
@@ -91,6 +101,13 @@ export default {
       const imageService = "//img2.storyblok.com/";
       const path = image.replace("//a.storyblok.com", "");
       return imageService + option + path;
+    },
+    selectSponsorsByLevel(level) {
+      level = level.toLowerCase();
+      if (level === "partner") {
+        return this.story.content.sponsors.filter(sponsor => !sponsor.level);
+      }
+      return this.story.content.sponsors.filter(sponsor => sponsor.level === level);
     }
   }
 };
