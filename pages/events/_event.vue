@@ -10,7 +10,7 @@
         </p>
         <div class="mt-3 mb-5">
           <v-btn
-            v-if="currentEvent.registrationUrl"
+            v-if="currentEvent.registrationUrl && !currentEvent.registration"
             color="primary darken-1"
             :href="currentEvent.registrationUrl"
           >Registration</v-btn>
