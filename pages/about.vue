@@ -30,6 +30,14 @@ export default {
     toHtml(text) {
       return markdown.toHTML(text);
     }
+  },
+  head() {
+    return {
+      title: 'About Vue Vixens',
+      meta: [
+        { hid: 'description', name: 'description', content: 'About the Vue Vixens organization' }
+      ]
+    }
   }
 };
 </script>

@@ -26,7 +26,15 @@
 <script>
 import messages from "../assets/translations/credits";
 export default {
-  i18n: { messages }
+  i18n: { messages },
+  head() {
+    return {
+      title: 'Credits',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Credit for Vue Vixen fabulosity' }
+      ]
+    }
+  }
 };
 </script>
 

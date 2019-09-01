@@ -98,6 +98,14 @@ export default {
       const path = image.replace("//a.storyblok.com", "");
       return imageService + option + path;
     }
+  },
+  head() {
+    return {
+      title: `${this.currentEvent.city} - Event`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Information for the Vue Vixens event in ${this.currentEvent.city}` }
+      ]
+    }
   }
 };
 </script>

@@ -1,6 +1,7 @@
 module.exports = {
 	head: {
-		title: 'Vue Vixens - Workshops for Foxy People to Learn Vue.js',
+		titleTemplate: '%s - Vue Vixens',
+		title: 'Workshops for Foxy People to Learn Vue.js',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
