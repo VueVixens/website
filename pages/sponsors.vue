@@ -77,6 +77,14 @@ export default {
         list: this.selectSponsorsByLevel(level)
       }));
     }
+  },
+  head() {
+    return {
+      title: `Sponsors`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Vue Vixens' awesome sponsors and partners` }
+      ]
+    }
   }
 };
 </script>

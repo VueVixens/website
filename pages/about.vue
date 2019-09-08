@@ -33,7 +33,7 @@ export default {
   },
   head() {
     return {
-      title: 'About Vue Vixens',
+      title: 'About',
       meta: [
         { hid: 'description', name: 'description', content: 'About the Vue Vixens organization' }
       ]

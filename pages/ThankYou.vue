@@ -13,6 +13,19 @@
   </v-layout>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: `Thank you!`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Thank you message for registrations` }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
 .raised {
   z-index: 3;

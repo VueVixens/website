@@ -21,6 +21,14 @@ export default {
   },
   i18n: {
     messages
+  },
+  head() {
+    return {
+      title: `Image Gallery`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Images from previous Vue Vixens events` }
+      ]
+    }
   }
 };
 </script>

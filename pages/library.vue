@@ -25,7 +25,15 @@
 <script>
 import storyblok from "../mixins/storyblok";
 export default {
-  mixins: [storyblok]
+  mixins: [storyblok],
+  head() {
+    return {
+      title: `Library`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Vue Vixen library of tech-related articles` }
+      ]
+    }
+  }
 };
 </script>
 

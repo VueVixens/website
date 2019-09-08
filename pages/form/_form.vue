@@ -93,7 +93,15 @@ export default {
     proceedToSorryMessage() {
       this.genderQuestionAnswered = true;
       this.showSorryMessage = true;
+    },
+  head() {
+    return {
+      title: `Registration`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Register for a Vue Vixens event` }
+      ]
     }
+  }
   }
 };
 </script>

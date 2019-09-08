@@ -55,7 +55,12 @@ export default {
   i18n: {
     messages
   },
-  transition: "fade"
+  transition: "fade",
+  head() {
+    return {
+      title: `Welcome`
+    }
+  }
 };
 </script>
 

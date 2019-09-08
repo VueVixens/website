@@ -28,6 +28,14 @@ import messages from "../assets/translations/request";
 export default {
   i18n: {
     messages
+  },
+  head() {
+    return {
+      title: `Event Request`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Request a Vue Vixens workshop at your event` }
+      ]
+    }
   }
 };
 </script>

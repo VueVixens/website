@@ -87,6 +87,14 @@ export default {
         );
       }
     }
+  },
+  head() {
+    return {
+      title: `Team`,
+      meta: [
+        { hid: 'description', name: 'description', content: `The Vue Vixens foxy team, advisory board, and chapter leaders` }
+      ]
+    }
   }
 };
 </script>

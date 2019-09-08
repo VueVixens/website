@@ -53,6 +53,14 @@ export default {
       this.currentPhotoIndex = index;
       this.dialog = true;
     }
+  },
+  head() {
+    return {
+      title: `${this.story.name} - Gallery`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Images from the Vue Vixens event at ${this.story.name}` }
+      ]
+    }
   }
 };
 </script>
