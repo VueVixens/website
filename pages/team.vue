@@ -6,7 +6,7 @@
       </v-flex>
       <template v-if="!!story.content">
         <v-container grid-list-lg>
-          <v-layout wrap justify-center>
+          <v-layout wrap class="justify-center">
             <VVMember v-for="member in staff" :member="member" :key="member.name"/>
           </v-layout>
         </v-container>
@@ -14,7 +14,7 @@
           <h2 class="vv-subheading font-lato text-xs-center">{{ $t("board") }}</h2>
         </v-flex>
         <v-container grid-list-lg>
-          <v-layout wrap justify-center>
+          <v-layout wrap class="justify-center">
             <VVMember v-for="member in advisory" :member="member" :key="member.name"/>
           </v-layout>
         </v-container>
@@ -22,7 +22,7 @@
           <h2 class="vv-subheading font-lato text-xs-center">{{ $t("chapter") }}</h2>
         </v-flex>
         <v-container grid-list-lg>
-          <v-layout wrap justify-center>
+          <v-layout wrap class="justify-center">
             <v-flex xs12 sm4 lg3 v-for="member in chapterLeaders" :key="member.name">
               <v-card height="100%">
                 <v-img
@@ -30,11 +30,11 @@
                   :src="member.img || '/images/fox-placeholder.jpg'"
                   class="grey lighten-2"
                 >
-                  <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
+                  <v-layout slot="placeholder" fill-height align-center class="justify-center" ma-0>
                     <v-progress-circular indeterminate color="grey darken-5"></v-progress-circular>
                   </v-layout>
                 </v-img>
-                <v-card-title justify-center>
+                <v-card-title class="justify-center">
                   <h3 class="d-block text-xs-center">{{member.name}}</h3>
                   <h4
                     class="d-block text-xs-center primary--text text--darken-2"

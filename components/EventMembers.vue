@@ -9,11 +9,11 @@
             :src="member.img"
             class="grey lighten-2"
           >
-            <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
+            <v-layout slot="placeholder" fill-height align-center class="justify-center"r ma-0>
               <v-progress-circular indeterminate color="grey darken-5"></v-progress-circular>
             </v-layout>
           </v-img>
-          <v-card-title justify-center>
+          <v-card-title class="justify-center"r>
             <p class="heading text-xs-center mb-1">{{member.name}}</p>
             <a
               class="subheading text-xs-center"

@@ -1,7 +1,7 @@
 <template>
   <div class="vv-meetups">
     <v-container fill-height>
-      <v-layout align-center justify-center wrap>
+      <v-layout align-center class="justify-center" wrap>
         <v-flex xs12 text-xs-center>
           <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{ title }}</h2>
         </v-flex>
@@ -17,7 +17,7 @@
                 target="_blank"
                 height="100%"
               >
-                <v-layout fill-height align-content-space-between justify-center ma-0>
+                <v-layout fill-height align-content-space-between class="justify-center" ma-0>
                   <v-flex xs12 class="meetup-item__content">
                     <div>
                       <h3 class="headline meetup-item__title">{{meetup.name}}</h3>

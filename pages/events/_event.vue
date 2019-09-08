@@ -33,7 +33,7 @@
     <!-- info section -->
     <v-container grid-list-xl>
       <h1 class="text-xs-center ma-3 primary--text font-lato">{{currentEvent.title}}</h1>
-      <v-layout row wrap justify-center>
+      <v-layout row wrap class="justify-center"r>
         <v-flex xs12 :sm6="!!currentEvent.schedule" v-html="toHtml(currentEvent.description)"></v-flex>
         <v-flex xs12 sm6 v-if="currentEvent.schedule">
           <h3 class="headline-1 mb-2">Schedule</h3>

@@ -5,8 +5,8 @@
         <v-card class="vv-card" hover :to="event.link.cached_url" nuxt>
           <no-ssr>
             <v-img class="white--text vv-card-image grey lighten-2" height="200px" :src="event.img">
-              <v-layout fill-height align-center justify-center ma-0>
-                <v-flex xs12 d-flex align-center justify-center class="event-name">
+              <v-layout fill-height align-center class="justify-center" ma-0>
+                <v-flex xs12 d-flex align-center class="event-name justify-center">
                   <div>
                     <h3 class="headline">{{event.location}}</h3>
                     <p class="title">{{event.date | moment('MMM Do')}}</p>

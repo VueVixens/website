@@ -2,11 +2,11 @@
   <v-flex xs12 sm6 lg4>
     <v-card height="100%">
       <v-img height="400px" :src="member.img" class="grey lighten-2">
-        <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
+        <v-layout slot="placeholder" fill-height align-center class="justify-center" ma-0>
           <v-progress-circular indeterminate color="grey darken-5"></v-progress-circular>
         </v-layout>
       </v-img>
-      <v-card-title justify-center>
+      <v-card-title class="justify-center">
         <h3 class="d-block text-xs-center">{{member.name}}</h3>
         <h4 class="d-block text-xs-center">{{member.title}}</h4>
         <a

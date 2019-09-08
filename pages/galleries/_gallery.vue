@@ -2,7 +2,7 @@
   <v-layout class="vv-container" fill-height>
     <v-container class="indexed">
       <v-flex xs12 class="text-xs-center">
-        <v-breadcrumbs justify-center>
+        <v-breadcrumbs class="justify-center">
           <v-icon medium slot="divider">forward</v-icon>
           <v-breadcrumbs-item to="/gallery" nuxt>
             <h2 class="vv-subheading font-lato text-xs-center">Gallery</h2>
@@ -18,7 +18,7 @@
             <v-card class="gallery-image" flat @click.native="setCarouselStart(index)">
               <no-ssr>
                 <v-img :src="item.img" height="200px" class="grey lighten-2">
-                  <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
+                  <v-layout slot="placeholder" fill-height align-center class="justify-center" ma-0>
                     <v-progress-circular indeterminate color="grey darken-5"></v-progress-circular>
                   </v-layout>
                 </v-img>

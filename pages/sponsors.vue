@@ -22,9 +22,8 @@
           <v-layout
             v-if="category.list && category.list.length"
             wrap
-            justify-center
             :key="category.name"
-            class="category-wrapper"
+            class="category-wrapper justify-center"
           >
             <v-flex xs12 sm6 lg4 v-for="sponsor in category.list" :key="sponsor.name">
               <v-card height="100%">
@@ -34,7 +33,7 @@
                   :aria-label="sponsor.name"
                   :title="sponsor.name"
                 >
-                <v-card-title justify-center>
+                <v-card-title class="justify-center">
                   <div class="sponsor-type" :class="sponsor.level"></div>
                   <p class="text-xs-center">{{ sponsor.tagline }}</p>
                   <p class="text-xs-center">{{ sponsor.description }}</p>
