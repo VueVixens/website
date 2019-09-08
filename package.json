@@ -2,7 +2,7 @@
   "name": "vuevixens",
   "version": "1.0.0",
   "description": "Workshops for Foxy People",
-  "author": "NataliaTepluhina <tarya.se@gmail.com>",
+  "author": "Vue Vixens <info@vuevixens.org>",
   "private": true,
   "config": {
     "nuxt": {
