@@ -1,0 +1,87 @@
+{
+  "projectName": "Vue Vixens Website",
+  "projectOwner": "Vue Vixens, Inc.",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "jlooper",
+      "name": "Jen Looper",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1450004?v=4",
+      "profile": "http://www.jenlooper.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "NataliaTepluhina",
+      "name": "Natalia Tepluhina",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/18719025?v=4",
+      "profile": "https://twitter.com/N_Tepluhina",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "marina-mosti",
+      "name": "Marina Mosti",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/14843771?v=4",
+      "profile": "https://github.com/marina-mosti",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "lauragift21",
+      "name": "Egwuenu Gift",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/17781315?v=4",
+      "profile": "https://www.giftegwuenu.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SaraVieira",
+      "name": "Sara Vieira",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1051509?v=4",
+      "profile": "http://iamsaravieira.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ratracegrad",
+      "name": "Jennifer Bland",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10262857?v=4",
+      "profile": "http://www.JenniferBland.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "novellac",
+      "name": "Novella C.",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/38117965?v=4",
+      "profile": "https://novella.dev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "alphacentauri82",
+      "name": "Super Diana",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/25756676?v=4",
+      "profile": "https://github.com/alphacentauri82",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
