@@ -6,7 +6,7 @@ export default {
       yes: "Yes",
       no: "No"
     },
-    heading: "Even Registration Form",
+    heading: "Event Registration Form",
     email: "Email *",
     emailRules: "Email is required *",
     name: "Full Name *",
@@ -31,7 +31,7 @@ export default {
       yes: "Si",
       no: "¡No!"
     },
-    heading: "Formulario de registro par",
+    heading: "Formulario de registro de eventos",
     email: "Email *",
     emailRules: "Correo electronico es requerido *",
     name: "Nombre Completo *",
@@ -49,5 +49,54 @@ export default {
     raised: "Lo sentimos, no podemos inscribirte en este taller.",
     backToHome: "De vuelta a casa"
   },
-  jp: {}
+  pt_br: {
+    genderQuestion: {
+      heading: `Os Workshops Vue Vixens são para mulheres e pessoas que se identificam como tal.
+      Antes de começar, informe-nos se você se identifica como mulher.`,
+      yes: "Sim",
+      no: "Não"
+    },
+    heading: "Formulário de Inscrição para Eventos",
+    email: "O email *",
+    emailRules: "E-mail é obrigatório *",
+    name: "Nome completo *",
+    nameRules: "Nome é obrigatório *",
+    affiliation: "Afiliação",
+    foodPreferences: "Preferências alimentares (se houver)",
+    gdpr: "Aceito receber e-mails da VueVixens*",
+    gdprRules: "Marque esta caixa de seleção para concluir o registro",
+    content: {
+      paragraph1: `Você pode cancelar a inscrição a qualquer momento clicando no link no rodapé dos nossos e-mails.`,
+      paragraph2: `Usamos o Mailchimp como nossa plataforma de marketing. Ao clicar abaixo para se inscrever, você reconhece que suas informações serão transferidas para o Mailchimp para processamento.`,
+      question: `Saiba mais sobre as práticas de privacidade da Mailchimp aqui.`
+    },
+    submit: "Enviar",
+    raised: "Desculpe, não podemos registrar você neste workshop.",
+    backToHome: "Voltar para casa"
+  },
+  fr: {
+    genderQuestion: {
+      heading: `Les ateliers Vue Vixens sont destinés aux femmes et aux personnes s'identifiant comme telles.
+      Avant de commencer, dites-nous si vous vous identifiez comme une femme.`,
+      yes: "Oui",
+      no: "Non"
+    },
+    heading: "Formulaire d'inscription à l'événement",
+    email: "Email *",
+    emailRules: "Email est requis *",
+    name: "Nom complet *",
+    nameRules: "Le nom est requis *",
+    affiliation: "Affiliation",
+    foodPreferences: "Préférences alimentaires (le cas échéant)",
+    gdpr: "J'accepte de recevoir des courriels de VueVixens *",
+    gdprRules: "Veuillez cocher cette case pour terminer l'enregistrement",
+    content: {
+      paragraph1: `Vous pouvez vous désabonner à tout moment en cliquant sur le lien dans le pied de page de nos courriels.`,
+      paragraph2: `Nous utilisons Mailchimp comme plate-forme de marketing. En cliquant ci-dessous pour vous abonner, vous reconnaissez que vos informations seront transférées à Mailchimp pour traitement.`,
+      question: `En savoir plus sur les pratiques de Mailchimp en matière de confidentialité, ici.`
+    },
+    submit: "Soumettre",
+    raised: "Désolé, nous ne pouvons pas vous inscrire à cet atelier.",
+    backToHome: "De retour à la maison"
+  }
 };
