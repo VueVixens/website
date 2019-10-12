@@ -72,7 +72,7 @@ import messages from "../../assets/translations/form";
 
 export default {
  
-  mixins: [storyblok],
+  // mixins: [storyblok],
   i18n: {
     messages
   },
