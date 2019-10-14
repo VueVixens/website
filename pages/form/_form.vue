@@ -77,35 +77,38 @@ export default {
     messages
   },
   props: {
-    label: "string"
+    label: "string",
+    
   },
   data() {
-    
     return {
       valid: false,
       formEvent: this.$route.params.form,
       email: "",
       name: "",
       gdpr: false,
-      nameRules: [name => !!name || "Name is required" ],
+      nameRules: [name => !!name || this.$t('nameRules') ],
       emailRules: [
-        email => !!email || "Email is required",
+        email => !!email ||  this.$t('emailRules'),
         email =>
           /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) ||
-          "Email must be valid"
+           this.$t('emailValid')
       ],
       gdprRules: [
-        gdpr => !!gdpr || "Please check this checkbox to finish registration"
+        gdpr => !!gdpr ||  this.$t('gdprRules')
       ],
       genderQuestionAnswered: false,
       showSorryMessage: false
     };
+   
   },
   methods: {
     proceedToSorryMessage() {
       this.genderQuestionAnswered = true;
       this.showSorryMessage = true;
-    }
+    
+
+}
   }
 };
 </script>
