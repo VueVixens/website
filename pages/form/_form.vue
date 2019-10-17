@@ -67,14 +67,15 @@
 </template>
 
 <script>
-import storyblok from "../../mixins/storyblok";
+// import storyblok from "../../mixins/storyblok";
 import messages from "../../assets/translations/form";
 
 export default {
  
   // mixins: [storyblok],
   i18n: {
-    messages
+    messages,
+    locale: "fr"
   },
   props: {
     label: "string",
