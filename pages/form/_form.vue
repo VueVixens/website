@@ -69,6 +69,10 @@
 <script>
 // import storyblok from "../../mixins/storyblok";
 import messages from "../../assets/translations/form";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c6a8373629a0d492b064b7c0aff06c3de964407
 export default {
  
   // mixins: [storyblok],
@@ -107,6 +111,10 @@ export default {
       this.genderQuestionAnswered = true;
       this.showSorryMessage = true;
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c6a8373629a0d492b064b7c0aff06c3de964407
 }
   }
 };

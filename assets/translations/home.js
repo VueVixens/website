@@ -95,6 +95,7 @@ export default {
       title: 'Pedir um evento',
       content:
         'Organizadores de eventos, registrem-se para ter um workshop em seu evento.'
+        
     }
   },
   fr: {
