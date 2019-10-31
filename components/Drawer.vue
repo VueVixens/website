@@ -26,7 +26,7 @@
       </v-list-tile>
       <v-list-tile href="http://vuevixens.com/" target="_blank">
         <v-list-tile-title class="subheading">{{ $t("menu.shop") }}</v-list-tile-title>
-      </v-list-tile> -->
+      </v-list-tile> 
     </v-list>
   </v-navigation-drawer>
 </template>
