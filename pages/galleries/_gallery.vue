@@ -15,7 +15,7 @@
       <v-container grid-list-lg>
         <v-layout wrap v-if="!!story.content">
           <v-flex xs6 md3 v-for="(item, index) in story.content.body" :key="item.img">
-            <v-card class="gallery-image" flat @click.native="setCarouselStart(index)">
+            <v-card class="gallery-image" text @click.native="setCarouselStart(index)">
               <client-only>
                 <v-img :src="item.img" height="200px" class="grey lighten-2">
                   <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
