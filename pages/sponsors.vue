@@ -127,6 +127,9 @@ img {
 
 .v-card__title {
   padding-bottom: 0;
+  font-size: inherit;
+  line-height: inherit;
+  word-break: inherit;
 }
 
 $sponsorTypes: ("platinum", "/images/plat.png"), ("gold", "/images/gold.png"),

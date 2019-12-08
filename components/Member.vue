@@ -50,8 +50,18 @@ h4 {
   width: 100%;
   padding-bottom: 10px;
 }
+h3 {
+  line-height: 31.59px;
+  font-size: 21px;
+}
+h4 {
+  line-height: 27px;
+  font-size: 18px;
+}
 p {
   font-size: 16px;
+  word-break: normal;
+  line-height: 24px;
 }
 a {
   width: 100%;
@@ -61,6 +71,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 24px;
 }
 </style>
 
