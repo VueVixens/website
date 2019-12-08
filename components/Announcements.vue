@@ -2,7 +2,7 @@
   <div class="vv-announcements">
     <v-container fill-height>
       <v-layout align-center justify-center wrap>
-        <v-flex xs12 text-xs-center>
+        <v-flex xs12 text-center>
           <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{$t('eventsTitle')}}</h2>
         </v-flex>
         <VVGrid :events="announcements"/>

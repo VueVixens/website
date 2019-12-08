@@ -1,6 +1,6 @@
 <template>
   <v-layout class="vv-container" fill-height>
-    <v-container class="raised text-xs-center">
+    <v-container class="raised text-center">
       <h1 class="display-3">Thank you for registering!</h1>
       <h2 class="display-1">We've sent you a confirmation email</h2>
       <v-btn

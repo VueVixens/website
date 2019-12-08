@@ -1,8 +1,8 @@
 <template>
   <v-layout class="vv-container" fill-height>
     <v-container class="indexed">
-      <v-flex xs12 class="text-xs-center">
-        <h2 class="vv-subheading font-lato text-xs-center">{{ $t("team") }}</h2>
+      <v-flex xs12 class="text-center">
+        <h2 class="vv-subheading font-lato text-center">{{ $t("team") }}</h2>
       </v-flex>
       <template v-if="!!story.content">
         <v-container grid-list-lg>
@@ -10,20 +10,20 @@
             <VVMember v-for="member in staff" :member="member" :key="member.name"/>
           </v-layout>
         </v-container>
-        <v-flex xs12 class="text-xs-center">
-          <h2 class="vv-subheading font-lato text-xs-center">{{ $t("board") }}</h2>
+        <v-flex xs12 class="text-center">
+          <h2 class="vv-subheading font-lato text-center">{{ $t("board") }}</h2>
         </v-flex>
         <v-container grid-list-lg>
           <v-layout wrap justify-center>
             <VVMember v-for="member in advisory" :member="member" :key="member.name"/>
           </v-layout>
         </v-container>
-        <v-flex xs12 class="text-xs-center">
-          <h2 class="vv-subheading font-lato text-xs-center">{{ $t("chapter") }}</h2>
+        <v-flex xs12 class="text-center">
+          <h2 class="vv-subheading font-lato text-center">{{ $t("chapter") }}</h2>
         </v-flex>
         <v-container grid-list-lg v-for="chapter in chapterTitles" :key="chapter">
           <v-layout wrap justify-center>
-            <v-flex xs12 class="text-xs-center">
+            <v-flex xs12 class="text-center">
               <h3>{{ chapter }}</h3>
             </v-flex>
             <VVMember size="300px" member-type="chapterLeader" v-for="member in filterByChapter(chapter)" :key="member.name" :member="member" />

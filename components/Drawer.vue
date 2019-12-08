@@ -21,12 +21,12 @@
         <v-list-item-title class="subheading">{{ $t("menu.gallery") }}</v-list-item-title>
       </v-list-item>
 
-      <v-list-tile href="https://dev.to/vuevixens" target="_blank">
-        <v-list-tile-title class="subheading">Blog</v-list-tile-title>
-      </v-list-tile>
-      <v-list-tile href="http://vuevixens.com/" target="_blank">
-        <v-list-tile-title class="subheading">{{ $t("menu.shop") }}</v-list-tile-title>
-      </v-list-tile>
+      <v-list-item href="https://dev.to/vuevixens" target="_blank">
+        <v-list-item-title class="subheading">Blog</v-list-item-title>
+      </v-list-item>
+      <v-list-item href="http://vuevixens.com/" target="_blank">
+        <v-list-item-title class="subheading">{{ $t("menu.shop") }}</v-list-item-title>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>

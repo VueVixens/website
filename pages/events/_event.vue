@@ -32,7 +32,7 @@
     <!-- end hero -->
     <!-- info section -->
     <v-container grid-list-xl>
-      <h1 class="text-xs-center ma-3 primary--text font-lato">{{currentEvent.title}}</h1>
+      <h1 class="text-center ma-3 primary--text font-lato">{{currentEvent.title}}</h1>
       <v-layout row wrap justify-center>
         <v-flex xs12 :sm6="!!currentEvent.schedule" v-html="toHtml(currentEvent.description)"></v-flex>
         <v-flex xs12 sm6 v-if="currentEvent.schedule">
@@ -44,20 +44,20 @@
     <!-- end info section -->
     <!-- speakers section -->
     <div v-if="currentEvent.speakers && currentEvent.speakers.length" class="secondary darken-2">
-      <h1 class="text-xs-center mt-3 white--text font-lato">Speakers</h1>
+      <h1 class="text-center mt-3 white--text font-lato">Speakers</h1>
       <VVEventMembers :members="currentEvent.speakers"/>
     </div>
     <!-- end speakers section -->
     <!-- mentors section -->
     <template v-if="currentEvent.mentors && currentEvent.mentors.length">
-      <h1 class="text-xs-center primary--text font-lato mt-3">Mentors</h1>
+      <h1 class="text-center primary--text font-lato mt-3">Mentors</h1>
       <VVEventMembers :members="currentEvent.mentors"/>
     </template>
     <!-- end mentors section -->
     <!-- sponsors section -->
     <template v-if="currentEvent.sponsors && currentEvent.sponsors.length">
       <v-divider></v-divider>
-      <h1 class="text-xs-center primary--text font-lato mt-3">Sponsors</h1>
+      <h1 class="text-center primary--text font-lato mt-3">Sponsors</h1>
       <v-container pa-4>
         <v-layout row wrap justify-space-around>
           <v-flex xs12 sm3 v-for="sponsor in currentEvent.sponsors" :key="sponsor.name">

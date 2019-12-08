@@ -2,8 +2,8 @@
   <v-layout class="vv-container" fill-height>
     <v-container class="indexed">
       <v-flex xs12>
-        <h2 class="vv-subheading font-lato text-xs-center">{{ $t("title") }}</h2>
-        <p class="text-xs-center vv-content title">{{ $t("subtitle") }}</p>
+        <h2 class="vv-subheading font-lato text-center">{{ $t("title") }}</h2>
+        <p class="text-center vv-content title">{{ $t("subtitle") }}</p>
         <ul class="list">
           <i18n tag="li" path="item1">
             <a href="https://unsplash.com/" place="unsplash">{{ $t("unsplashLink") }}</a>

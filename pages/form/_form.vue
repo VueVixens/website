@@ -15,7 +15,7 @@
     <template v-else-if="!showSorryMessage">
       <v-container class="indexed">
         <v-flex xs12>
-          <h1 class="display-2 text-xs-center">Event registration form</h1>
+          <h1 class="display-2 text-center">Event registration form</h1>
           <v-form
             action="https://vuevixens.us7.list-manage.com/subscribe/post?u=bb4724549551e6cf7bb5e3165&amp;id=ecd2dfeb93"
             method="post"

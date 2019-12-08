@@ -1,13 +1,13 @@
 <template>
   <v-layout class="vv-container">
     <v-container class="indexed">
-      <v-flex xs-12 text-xs-center>
+      <v-flex xs-12 text-center>
         <img class="vv-logo" src="~/assets/images/logo.png" alt="VueVixens logo">
       </v-flex>
       <v-flex xs12 v-if="!!story.content">
         <template v-for="(element, index) in story.content.body">
           <h2
-            class="vv-subheading font-lato text-xs-center"
+            class="vv-subheading font-lato text-center"
             :key="element.title + index"
           >{{ element.title }}</h2>
           <div class="about-content" v-html="toHtml(element.content)" :key="element.title"></div>

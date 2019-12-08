@@ -14,9 +14,9 @@
             </v-layout>
           </v-img>
           <v-card-title justify-center>
-            <p class="heading text-xs-center mb-1">{{member.name}}</p>
+            <p class="heading text-center mb-1">{{member.name}}</p>
             <a
-              class="subheading text-xs-center"
+              class="subheading text-center"
               v-if="member.twitter"
               target="_blank"
               :href="`http://www.twitter.com/${member.twitter}`"

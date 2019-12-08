@@ -1,8 +1,8 @@
 <template>
   <v-layout class="vv-container" fill-height>
     <v-container class="indexed">
-      <v-flex xs12 class="text-xs-center">
-        <h2 class="vv-heading font-lato text-xs-center">{{ $t('title') }}</h2>
+      <v-flex xs12 class="text-center">
+        <h2 class="vv-heading font-lato text-center">{{ $t('title') }}</h2>
         <i18n path="subtitle" class="vv-content title" tag="p">
           <a href="mailto:info@vuevixens.org" place="mail">{{ $t('mailLink') }}</a>
           <a
@@ -15,7 +15,7 @@
       <v-container grid-list-lg v-if="!!story.content">
         <template v-for="category in sponsors">
           <h3
-            class="vv-subheading font-lato text-xs-center"
+            class="vv-subheading font-lato text-center"
             :key="`category-${category.name}`"
             v-if="category.list && category.list.length"
           >{{ category.name }}</h3>
@@ -36,10 +36,10 @@
                 >
                 <v-card-title justify-center>
                   <div class="sponsor-type" :class="sponsor.level"></div>
-                  <p class="text-xs-center">{{ sponsor.tagline }}</p>
-                  <p class="text-xs-center">{{ sponsor.description }}</p>
+                  <p class="text-center">{{ sponsor.tagline }}</p>
+                  <p class="text-center">{{ sponsor.description }}</p>
                 </v-card-title>
-                <a :href="sponsor.website.url" class="d-block text-xs-center">
+                <a :href="sponsor.website.url" class="d-block text-center">
                   <i class="fa fa-link" aria-hidden="true"></i>
                   {{ sponsor.website.url }}
                 </a>

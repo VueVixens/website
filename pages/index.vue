@@ -3,13 +3,13 @@
     <v-parallax dark class="grey darken-2" src="/images/fox-bg.jpg">
       <v-container fill-height>
         <v-layout align-center row wrap justify-space-between>
-          <v-flex xs12 sm12 md4 class="text-xs-center" order-md2>
+          <v-flex xs12 sm12 md4 class="text-center" order-md2>
             <img class="vv-logo" src="~/assets/images/logo.png" alt="VueVixens logo" />
           </v-flex>
           <v-flex xs12 sm12 md7 order-md1>
-            <h1 class="vv-heading font-lato text-xs-center text-md-left">{{$t('heading.title')}}</h1>
+            <h1 class="vv-heading font-lato text-center text-md-left">{{$t('heading.title')}}</h1>
             <h2
-              class="vv-subheading font-lato text-xs-center text-md-left"
+              class="vv-subheading font-lato text-center text-md-left"
             >{{$t('heading.description')}}</h2>
             <v-flex class="vv-cta">
               <v-btn

@@ -4,8 +4,8 @@
       <v-card height="100%">
         <img src="~/assets/images/cry-fox.jpeg" alt="Fox image`">
         <v-card-title>
-          <h3 class="vv-subheading font-lato text-xs-center">{{ $t("title") }}</h3>
-          <p class="text-xs-center vv-content title">{{ $t("subtitle") }}</p>
+          <h3 class="vv-subheading font-lato text-center">{{ $t("title") }}</h3>
+          <p class="text-center vv-content title">{{ $t("subtitle") }}</p>
         </v-card-title>
       </v-card>
     </v-container>

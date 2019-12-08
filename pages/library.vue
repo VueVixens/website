@@ -11,7 +11,7 @@
         :key="article.title"
       >
         <v-card-title>
-          <h3 class="d-block text-xs-center">{{article.title}}</h3>
+          <h3 class="d-block text-center">{{article.title}}</h3>
           <p class="primary--text text--darken-1">
             <em>{{article.author}}</em>
           </p>
