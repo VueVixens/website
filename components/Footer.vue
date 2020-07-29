@@ -3,14 +3,14 @@
     <v-layout class="footer-links hidden-sm-and-down" justify-start align-center row wrap>
       <v-btn color="white" text rounded to="/credits">{{ $t("credits") }}</v-btn>
       <v-btn
-        color="white"
+        color="green"
         text
         rounded
         href="https://spark.adobe.com/page/FFczmvHR6Brpu/"
         target="_blank"
       >{{ $t("press") }}</v-btn>
       <v-btn
-        color="white"
+        color="green"
         text
         rounded
         href="mailto:info@vuevixens.org"
