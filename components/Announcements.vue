@@ -6,6 +6,7 @@
           <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{$t('eventsTitle')}}</h2>
         </v-flex>
         <VVGrid :events="announcements" />
+        <h1>Hello World!</h1>
       </v-layout>
     </v-container>
   </div>
