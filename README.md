@@ -20,4 +20,4 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-We welcome contributions! Please take a look at our [Code of Conduct](CODE_OF_CONDUCT.md)
+<strong>We welcome contributions!</strong> Please take a look at our [Code of Conduct](CODE_OF_CONDUCT.md)
