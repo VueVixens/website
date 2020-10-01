@@ -1,4 +1,4 @@
-# Vue Vixens
+# Vue Vixens an amazing project
 
 > Workshops for Foxy People 🦊
 
