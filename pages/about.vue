@@ -3,11 +3,14 @@
     <v-container class="indexed">
       <v-flex xs12 v-if="!!story.content">
         <template v-for="(element, index) in story.content.body">
-          <h2
-            class="vv-subheading font-lato text-center"
-            :key="element.title + index"
-          >{{ element.title }}</h2>
-          <div class="about-content" v-html="toHtml(element.content)" :key="element.title"></div>
+          <h2 class="vv-subheading font-lato" :key="element.title + index">
+            {{ element.title }}
+          </h2>
+          <div
+            class="about-content"
+            v-html="toHtml(element.content)"
+            :key="element.title"
+          ></div>
         </template>
       </v-flex>
     </v-container>
@@ -21,13 +24,13 @@ import { markdown } from "markdown";
 export default {
   mixins: [storyblok],
   i18n: {
-    messages
+    messages,
   },
   methods: {
     toHtml(text) {
       return markdown.toHTML(text);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -39,6 +42,12 @@ export default {
 }
 
 .about-content {
-  padding: 10px 0;
+  padding: 15px 0;
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 900px;
+  }
 }
 </style>

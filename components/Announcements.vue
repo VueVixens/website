@@ -3,7 +3,9 @@
     <v-container fill-height>
       <v-layout align-center justify-center wrap>
         <v-flex xs12 text-center>
-          <h2 class="vv-subheading font-lato secondary--text text--darken-2">{{$t('eventsTitle')}}</h2>
+          <h2 class="vv-subheading font-lato secondary--text text--darken-2">
+            {{ $t("eventsTitle") }}
+          </h2>
         </v-flex>
         <VVGrid :events="announcements" />
       </v-layout>
@@ -18,22 +20,26 @@ export default {
   props: ["announcements"],
   data() {
     return {
-      gradient: "to top, #fff, rgba(4,30,48, 0.3)"
+      gradient: "to top, #fff, rgba(4,30,48, 0.3)",
     };
   },
   components: {
-    VVGrid
+    VVGrid,
   },
   i18n: {
-    messages
-  }
+    messages,
+  },
 };
 </script>
 
 <style scoped lang="scss">
 .vv-link {
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
+}
+
+.vv-announcements {
+  padding: 10px 0;
 }
 
 .vv-subheading {
@@ -42,19 +48,13 @@ export default {
   text-shadow: 2px 2px 0px #bababa;
 }
 
-@media (min-width: 961px) {
-  .vv-link:hover {
-    text-shadow: 0 0 8px #47b784;
-  }
-}
-
-@media (max-width: 960px) {
-  .vv-announcements {
-    padding: 10px 0;
-  }
-
+@media (min-width: 960px) {
   .vv-link {
-    font-size: 20px;
+    font-size: 24px;
+
+    &:hover {
+      text-shadow: 0 0 8px #47b784;
+    }
   }
 }
 </style>

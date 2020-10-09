@@ -7,7 +7,11 @@
       <template v-if="!!story.content">
         <v-container grid-list-lg>
           <v-layout wrap justify-center>
-            <VVMember v-for="member in staff" :member="member" :key="member.name" />
+            <VVMember
+              v-for="member in staff"
+              :member="member"
+              :key="member.name"
+            />
           </v-layout>
         </v-container>
         <!--<v-flex xs12 class="text-center">
@@ -15,13 +19,23 @@
         </v-flex>-->
         <v-container grid-list-lg>
           <v-layout wrap justify-center>
-            <VVMember v-for="member in advisory" :member="member" :key="member.name" />
+            <VVMember
+              v-for="member in advisory"
+              :member="member"
+              :key="member.name"
+            />
           </v-layout>
         </v-container>
         <v-flex xs12 class="text-center">
-          <h2 class="vv-subheading font-lato text-center">{{ $t("chapter") }}</h2>
+          <h2 class="vv-subheading font-lato text-center">
+            {{ $t("chapter") }}
+          </h2>
         </v-flex>
-        <v-container grid-list-lg v-for="chapter in chapterTitles" :key="chapter">
+        <v-container
+          grid-list-lg
+          v-for="chapter in chapterTitles"
+          :key="chapter"
+        >
           <v-layout wrap justify-center>
             <v-flex xs12 class="text-center">
               <h3>{{ chapter }}</h3>
@@ -47,43 +61,43 @@ import VVMember from "../components/Member.vue";
 export default {
   mixins: [storyblok],
   components: {
-    VVMember
+    VVMember,
   },
   i18n: {
-    messages
+    messages,
   },
   computed: {
     staff() {
       if (this.story.content.body) {
-        return this.story.content.body.filter(item => item.staff);
+        return this.story.content.body.filter((item) => item.staff);
       }
     },
     chapterLeaders() {
       if (this.story.content.body) {
-        return this.story.content.body.filter(item => item.chapter);
+        return this.story.content.body.filter((item) => item.chapter);
       }
     },
     chapterTitles() {
       if (this.chapterLeaders) {
-        let chapters = this.chapterLeaders.map(leader => leader.title);
+        let chapters = this.chapterLeaders.map((leader) => leader.title);
         return [...new Set(chapters)];
       }
     },
     advisory() {
       if (this.story.content.body) {
         return this.story.content.body.filter(
-          item => !item.staff && !item.chapter
+          (item) => !item.staff && !item.chapter
         );
       }
-    }
+    },
   },
   methods: {
     filterByChapter(chapterName) {
       return this.chapterLeaders.filter(
-        chapter => chapter.title === chapterName
+        (chapter) => chapter.title === chapterName
       );
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -91,7 +105,6 @@ export default {
 h3,
 h4 {
   width: 100%;
-  padding-bottom: 10px;
 }
 p {
   font-size: 16px;
