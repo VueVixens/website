@@ -17,12 +17,19 @@ html {
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+.v-btn {
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 .page-enter-active,
 .page-leave-active {
-	transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .page-enter,
 .page-leave-active {
