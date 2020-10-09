@@ -43,6 +43,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.v-footer {
+  padding: 12px 16px;
+}
 a {
   display: flex;
   padding: 0 15px;
