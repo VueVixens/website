@@ -1,0 +1,46 @@
+.vv-card {
+  cursor: pointer;
+
+  .title {
+    width: 100%;
+  }
+
+  .v-card__title {
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    word-break: inherit;
+  }
+
+  &:hover {
+    .vv-card-image {
+      &:before {
+        transition: 0.5s linear;
+        background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px,
+          0 calc(100% - 4px);
+      }
+    }
+  }
+
+  .vv-card-image {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0) 70%
+      );
+      background-repeat: no-repeat;
+      background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+      background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    }
+  }
+}
