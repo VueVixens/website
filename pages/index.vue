@@ -1,23 +1,29 @@
 <template>
   <div>
-    <v-parallax dark class="grey darken-2" src="/images/fox-bg.jpg">
+    <v-parallax dark src="/images/bg1.jpg">
       <v-container fill-height>
         <v-layout align-center row wrap justify-space-between>
-          <v-flex xs12 sm12 md4 class="text-xs-center" order-md2>
-            <img class="vv-logo" src="~/assets/images/logo.png" alt="VueVixens logo">
+          <v-flex xs12 sm12 md4 class="text-center" order-md2>
+            <img class="vv-logo" src="~/assets/images/ff-logo.png" alt="Front-End Foxes logo" />
           </v-flex>
           <v-flex xs12 sm12 md7 order-md1>
-            <h1 class="vv-heading font-lato text-xs-center text-md-left">{{$t('heading.title')}}</h1>
+            <h1 class="vv-heading font-lato text-center text-md-left">{{$t('heading.title')}}</h1>
             <h2
-              class="vv-subheading font-lato text-xs-center text-md-left"
+              class="vv-subheading font-lato text-center text-md-left"
             >{{$t('heading.description')}}</h2>
             <v-flex class="vv-cta">
               <v-btn
-                href="https://vuevixens.github.io/docs/workshop/"
+                href="https://workshops.vuevixens.org/workshops/vue/"
                 target="_blank"
                 color="accent darken-1"
-              >{{$t('heading.workshops')}}</v-btn>
+              >Vue Workshops</v-btn>
               <v-btn
+                href="https://www.meetup.com/frontendfoxes"
+                target="_blank"
+                color="accent darken-1"
+              >Meetups</v-btn>
+              <v-btn
+              
                 href="https://www.patreon.com/vuevixens"
                 target="_blank"
                 color="accent darken-1"
@@ -27,7 +33,10 @@
         </v-layout>
       </v-container>
     </v-parallax>
-    <VVAnnouncements v-if="announcements && announcements.length" :announcements="announcements"/>
+    <div class="vv-homebox">
+      <VVHomeBox />
+      <VVAnnouncements v-if="announcements && announcements.length" :announcements="announcements" />
+    </div>
   </div>
 </template>
 
@@ -35,12 +44,15 @@
 import storyblok from "../mixins/storyblok";
 import messages from "../assets/translations/home";
 import VVAnnouncements from "../components/Announcements";
+import VVHomeBox from "../components/HomeBox";
 
 export default {
   mixins: [storyblok],
   components: {
-    VVAnnouncements
+    VVAnnouncements,
+    VVHomeBox
   },
+
   computed: {
     announcements() {
       return this.story.content.body;
@@ -66,11 +78,6 @@ export default {
   padding-top: 30px;
 }
 
-.vv-patreon-logo {
-  max-width: 22px;
-  margin-right: 5px;
-}
-
 .vv-card-text {
   padding-top: 15px;
 }
@@ -87,6 +94,9 @@ export default {
   .vv-cta {
     padding-top: 10px;
     text-align: center;
+  }
+  .vv-cta .v-btn {
+    margin-top: 10px;
   }
 }
 

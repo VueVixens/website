@@ -8,27 +8,24 @@
     dark
   >
     <v-list>
-      <v-list-tile to="/about">
-        <v-list-tile-title class="subheading">{{ $t("menu.about") }}</v-list-tile-title>
-      </v-list-tile>
-      <v-list-tile to="/sponsors">
-        <v-list-tile-title class="subheading">{{ $t("menu.sponsors") }}</v-list-tile-title>
-      </v-list-tile>
-      <v-list-tile to="/team">
-        <v-list-tile-title class="subheading">{{ $t("menu.team") }}</v-list-tile-title>
-      </v-list-tile>
-      <v-list-tile to="/gallery">
-        <v-list-tile-title class="subheading">{{ $t("menu.gallery") }}</v-list-tile-title>
-      </v-list-tile>
-      <v-list-tile to="/library">
-        <v-list-tile-title class="subheading">{{ $t("menu.library") }}</v-list-tile-title>
-      </v-list-tile>
-      <v-list-tile href="https://dev.to/vuevixens" target="_blank">
-        <v-list-tile-title class="subheading">Blog</v-list-tile-title>
-      </v-list-tile>
-      <v-list-tile href="https://shop.vuevixens.org/" target="_blank">
-        <v-list-tile-title class="subheading">{{ $t("menu.shop") }}</v-list-tile-title>
-      </v-list-tile>
+      <v-list-item to="/about">
+        <v-list-item-title class="subheading">{{ $t('menu.about') }}</v-list-item-title>
+      </v-list-item>
+      <v-list-item to="/sponsors">
+        <v-list-item-title class="subheading">{{ $t('menu.sponsors') }}</v-list-item-title>
+      </v-list-item>
+      <v-list-item to="/team">
+        <v-list-item-title class="subheading">{{ $t('menu.team') }}</v-list-item-title>
+      </v-list-item>
+      <v-list-item to="/gallery">
+        <v-list-item-title class="subheading">{{ $t('menu.gallery') }}</v-list-item-title>
+      </v-list-item>
+      <v-list-item href="https://dev.to/frontendfoxes" target="_blank">
+        <v-list-item-title class="subheading">Blog</v-list-item-title>
+      </v-list-item>
+      <v-list-item href="https://etsy.com/shop/vuevixens" target="_blank">
+        <v-list-item-title class="subheading">{{ $t('menu.shop') }}</v-list-item-title>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
